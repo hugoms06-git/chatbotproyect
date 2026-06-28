@@ -180,5 +180,23 @@ h4 {
   padding-left: 26%;
 }
 
+.botonDemo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  background-color: rgb(214, 197, 171);
+  border-radius: 90px;
+  padding: 11px;
+  display: flex;
+  border: none;
+  margin-left: 22%;
+  margin-top: 2%;
+}
+
+.botonDemo:hover {
+  background-color: rgb(204, 188, 167);
+  color: rgb(107, 66, 38);
+  cursor: pointer;
+}
 
 
