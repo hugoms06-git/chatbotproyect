@@ -144,11 +144,12 @@ body {
   padding: 11px;
   display: flex;
   border: none;
+  position: static;
 }
 
 .boton:hover {
   background-color: rgb(204, 188, 167);
-  color: rgb(107, 66, 38);
+  color: rgb(45, 27, 16);
   cursor: pointer;
 }
 
@@ -161,8 +162,9 @@ main {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   text-align: center;
-  align-items: center;
-  display: block;
+  font-size: 200px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 h4 {
@@ -176,8 +178,15 @@ h4 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
-  padding-right: 26%;
-  padding-left: 26%;
+  position: static;
+}
+
+.divDemo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
 }
 
 .botonDemo {
@@ -188,15 +197,286 @@ h4 {
   border-radius: 90px;
   padding: 11px;
   display: flex;
+  position: static;
   border: none;
-  margin-left: 22%;
   margin-top: 2%;
 }
 
 .botonDemo:hover {
   background-color: rgb(204, 188, 167);
-  color: rgb(107, 66, 38);
+  color: rgb(45, 27, 16);
   cursor: pointer;
 }
 
+.botonFT {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  background-color: rgb(96, 70, 31);
+  color: rgb(247, 245, 243);
+  border-radius: 90px;
+  padding: 11px;
+  display: flex;
+  position: static;
+  border: none;
+  margin-top: 2%;
+}
 
+.botonFT:hover {
+  background-color: rgb(213, 193, 168);
+  color: rgb(50, 29, 16);
+  cursor: pointer;
+}
+
+/*SEPARATION*/
+
+.showcase {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  padding: 40px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+ 
+.showcase-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.showcase-right {
+  flex: 1.4;
+}
+ 
+/* ============================================
+   3. PESTAÑAS (B2B SaaS / Ecommerce / Fintech)
+   ============================================ */
+.tabs {
+  display: inline-flex;
+  gap: 4px;
+  background: rgb(250, 244, 236);
+  border: 1px solid rgb(236, 220, 200);
+  border-radius: 12px;
+  padding: 4px;
+  align-self: flex-start;
+}
+ 
+.tab {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: rgb(83, 54, 10);
+}
+ 
+/* La pestaña activa se resalta con tu color de marca */
+.tab.active {
+  background: rgb(214, 197, 171);
+  color: rgb(45, 27, 16);
+  font-weight: 600;
+}
+ 
+/* ============================================
+   4. LISTA DE PASOS (01 Build, 02 Resolve...)
+   ============================================ */
+.steps {
+  margin-top: auto; /* empuja la lista hacia abajo */
+  list-style: none;
+  padding: 0;
+}
+ 
+.step {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgb(236, 220, 200);
+  cursor: pointer;
+  position: relative; /* referencia para la barra de progreso */
+  color: rgb(150, 130, 110);
+  transition: color 0.3s ease;
+}
+ 
+.step-number {
+  font-size: 14px;
+}
+ 
+.step-name {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+ 
+/* El paso activo se oscurece */
+.step.active {
+  color: rgb(45, 27, 16);
+}
+ 
+/* Descripción que solo se ve en el paso activo */
+.step-desc {
+  display: none;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  font-size: 14px;
+  color: rgb(150, 130, 110);
+}
+ 
+.step.active .step-desc {
+  display: block;
+}
+ 
+/* La rayita de progreso bajo el paso activo.
+   Se anima de 0% a 100% de ancho con JS + transition */
+.step-progress {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: rgb(45, 27, 16);
+}
+ 
+.step.active .step-progress {
+  transition: width 5s linear; /* 5s = duración de cada paso */
+}
+ 
+/* Deja hueco extra bajo el paso activo para su descripción */
+.step.active {
+  margin-bottom: 26px;
+}
+ 
+/* ============================================
+   5. PANEL DERECHO (el "dashboard")
+   ============================================ */
+.panel {
+  border-radius: 20px;
+  padding: 80px 30px 30px;
+  position: relative;
+  overflow: hidden;
+  /* El fondo difuminado: varios degradados radiales suaves */
+  background:
+    radial-gradient(circle at 80% 10%, rgba(203, 234, 166, 0.55), transparent 45%),
+    radial-gradient(circle at 100% 90%, rgba(230, 190, 255, 0.5), transparent 50%),
+    radial-gradient(circle at 20% 100%, rgba(255, 214, 130, 0.55), transparent 55%),
+    rgb(244, 238, 230);
+}
+ 
+/* --- Tarjetas de métricas --- */
+.metrics {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+ 
+.metric-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 14px;
+  padding: 16px;
+}
+ 
+.metric-label {
+  font-size: 13px;
+  color: rgb(110, 95, 80);
+  margin-bottom: 6px;
+}
+ 
+.metric-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(35, 30, 25);
+}
+ 
+.metric-badge {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 3px 10px;
+  color: rgb(60, 50, 40);
+}
+ 
+/* --- Bloque de topics con barras --- */
+.topics {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 14px;
+  padding: 18px;
+}
+ 
+.topics-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(60, 50, 40);
+  margin-bottom: 12px;
+}
+ 
+.topic-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(60, 50, 40);
+}
+ 
+.topic-name {
+  width: 110px;
+}
+ 
+/* La barra: un fondo claro y dentro un relleno morado
+   cuyo width en % ES el dato */
+.topic-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+.topic-fill {
+  height: 100%;
+  width: 0%; /* empieza en 0 y JS la anima a su valor */
+  background: rgb(155, 120, 190);
+  border-radius: 8px;
+  transition: width 1s ease;
+}
+ 
+.topic-pct {
+  width: 40px;
+  text-align: right;
+}
+ 
+/* --- Botón de pausa --- */
+.pause-btn {
+  margin-top: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgb(60, 50, 40);
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(60, 50, 40);
+}
+ 
+/* ============================================
+   6. RESPONSIVE: en móvil, una columna
+   ============================================ */
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .steps {
+    margin-top: 30px;
+  }
+}
