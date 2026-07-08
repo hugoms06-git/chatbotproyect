@@ -491,3 +491,13 @@ h4 {
   background-color: rgb(237, 209, 165);
   padding: 15%;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;      /* título más pequeño en móvil */
+  }
+  nav {
+    flex-direction: column;  /* menú en vertical */
+  }
+  /* etc. */
+}
