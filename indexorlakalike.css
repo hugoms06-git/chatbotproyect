@@ -3,7 +3,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 16px;
   font-style: normal;
-  background-color: rgb(253, 246, 237);
+  background-color: #F5F5F6;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ header {
 .informative {
   text-align: center;
   padding: 8px;
-  background-color: rgb(214, 197, 171);
+  background-color: #2d753a;
   font-size: 16px;
   position: relative;
 }
@@ -27,7 +27,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 12px;
   font-style: normal;
-  color: rgb(83, 54, 10);
+  color: #FFFFFF;
 }
 
 .structureNav {
@@ -35,7 +35,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 20px;
   font-style: normal;
-  background-color: rgb(255, 255, 255);
+  background-color: #F5F5F6;
   position: relative;
   padding: 12px;
   display: flex;
@@ -50,7 +50,7 @@ header {
 }
 
 .hoak {
-  color: rgb(45, 27, 16);
+  color: #111111;
   position: relative;
   display: flex;
   font-size: 28px;
@@ -58,7 +58,7 @@ header {
 
 .features {
   padding-top: 6px;
-  color: rgb(83, 54, 10);
+  color: #404040;
   position: relative;
   display: flex;
   font-size: 19px;
@@ -85,7 +85,7 @@ header {
   font-weight: 9px;
   font-style: normal;
   padding-top: 2.9px;
-  color: rgb(107, 66, 38);
+  color: #595959;
   display: flex;
   align-items: center;
   flex: 2;
@@ -107,23 +107,23 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgb(255, 255, 255);
+  background: #FFFFFF;
   min-width: 220px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 11px;
   z-index: 1000;
   padding: 4px 0;
-  border: 1px solid rgb(236, 220, 200);
+  border: 1px solid #E0E0E0;
 }
 
 .desplegable a {
   display: block;
   padding: 12px 16px;
-  color: rgb(74, 46, 24);
+  color: #222222;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  border-bottom: 1px solid rgb(245, 236, 224);
+  border-bottom: 1px solid #EDEDED;
   border-radius: 11px;
 }
 
@@ -132,8 +132,8 @@ header {
 }
 
 .desplegable a:hover {
-  background: rgb(253, 243, 231);
-  color: rgb(139, 94, 26);
+  background: #F0F4F1;
+  color: #111111;
 }
 
 .features:hover .desplegable {
@@ -145,17 +145,19 @@ header {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-size: 16px;
-  background-color: rgb(214, 197, 171);
+  background-color: #3da050;
   border-radius: 90px;
   padding: 11px;
   display: flex;
   border: none;
   position: static;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .boton:hover {
-  background-color: rgb(204, 188, 167);
-  color: rgb(45, 27, 16);
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -174,10 +176,16 @@ main {
 }
 
 h4 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
   text-align: center;
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 10px;
+}
+
+.less {
+  color: #3da050;
 }
 
 .subEslogan {
@@ -199,18 +207,19 @@ h4 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-size: 16px;
-  background-color: rgb(214, 197, 171);
+  background-color: #F0F0F0;
   border-radius: 90px;
   padding: 11px;
   display: flex;
   position: static;
   border: none;
   margin-top: 2%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .botonDemo:hover {
-  background-color: rgb(204, 188, 167);
-  color: rgb(45, 27, 16);
+  background-color: #E5E5E5;
+  color: #111111;
   cursor: pointer;
 }
 
@@ -218,19 +227,20 @@ h4 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-size: 16px;
-  background-color: rgb(96, 70, 31);
-  color: rgb(247, 245, 243);
+  background-color: #3da050;
+  color: #FFFFFF;
   border-radius: 90px;
   padding: 11px;
   display: flex;
   position: static;
   border: none;
   margin-top: 2%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .botonFT:hover {
-  background-color: rgb(213, 193, 168);
-  color: rgb(50, 29, 16);
+  background-color: #2E2E2E;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -240,38 +250,39 @@ h4 {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  gap: 40px;
-  background: rgb(255, 255, 255);
+  gap: 30px;
+  background: #FFFFFF;
+  border: #111111;
   border-radius: 24px;
   padding: 40px;
   margin-top: 6%;
   margin-bottom: 6%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.08);
 }
- 
+
 .showcase-left {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
- 
+
 .showcase-right {
   flex: 1.4;
 }
- 
+
 /* ============================================
    3. PESTAÑAS (B2B SaaS / E>commerce / Fintech)
    ============================================ */
 .tabs {
   display: inline-flex;
   gap: 4px;
-  background: rgb(250, 244, 236);
-  border: 1px solid rgb(236, 220, 200);
+  background: #F5F5F5;
+  border: 1px solid #E0E0E0;
   border-radius: 12px;
   padding: 4px;
   align-self: flex-start;
 }
- 
+
 .tab {
   font-family: "Outfit", sans-serif;
   font-size: 15px;
@@ -280,51 +291,52 @@ h4 {
   padding: 8px 16px;
   border-radius: 9px;
   cursor: pointer;
-  color: rgb(83, 54, 10);
+  color: #404040;
 }
- 
+
 /* La pestaña activa se resalta con tu color de marca */
 .tab.active {
-  background: rgb(214, 197, 171);
-  color: rgb(45, 27, 16);
+  background: #FFFFFF;
+  color: #111111;
   font-weight: 600;
 }
- 
+
 /* ============================================
    4. LISTA DE PASOS (01 Build, 02 Resolve...)
    ============================================ */
 .steps {
-  margin-top: auto; /* empuja la lista hacia abajo */
+  margin-top: 7%;
   list-style: none;
   padding: 0;
 }
- 
+
 .step {
   display: flex;
   align-items: baseline;
   gap: 24px;
   padding: 16px 0;
-  border-bottom: 1px solid rgb(236, 220, 200);
+  border-bottom: 1px solid #E0E0E0;
   cursor: pointer;
-  position: relative; /* referencia para la barra de progreso */
-  color: rgb(150, 130, 110);
+  position: relative;
+  /* referencia para la barra de progreso */
+  color: #9E9E9E;
   transition: color 0.3s ease;
 }
- 
+
 .step-number {
   font-size: 14px;
 }
- 
+
 .step-name {
   font-family: "Playfair Display", serif;
   font-size: 22px;
 }
- 
+
 /* El paso activo se oscurece */
 .step.active {
-  color: rgb(45, 27, 16);
+  color: #111111;
 }
- 
+
 /* Descripción que solo se ve en el paso activo */
 .step-desc {
   display: none;
@@ -332,13 +344,13 @@ h4 {
   bottom: -22px;
   left: 0;
   font-size: 14px;
-  color: rgb(150, 130, 110);
+  color: #9E9E9E;
 }
- 
+
 .step.active .step-desc {
   display: block;
 }
- 
+
 /* La rayita de progreso bajo el paso activo.
    Se anima de 0% a 100% de ancho con JS + transition */
 .step-progress {
@@ -347,133 +359,131 @@ h4 {
   left: 0;
   height: 2px;
   width: 0%;
-  background: rgb(45, 27, 16);
+  background: #3da050;
 }
- 
+
 .step.active .step-progress {
-  transition: width 5s linear; /* 5s = duración de cada paso */
+  transition: width 5s linear;
+  /* 5s = duración de cada paso */
 }
- 
+
 /* Deja hueco extra bajo el paso activo para su descripción */
 .step.active {
   margin-bottom: 26px;
 }
- 
+
 /* ============================================
    5. PANEL DERECHO (el "dashboard")
    ============================================ */
 .panel {
   border-radius: 20px;
-  padding: 80px 30px 30px;
+  padding: 30px 30px 30px;
   position: relative;
   overflow: hidden;
   /* El fondo difuminado: varios degradados radiales suaves */
-  background:
-    radial-gradient(circle at 80% 10%, rgba(234, 213, 166, 0.55), transparent 45%),
-    radial-gradient(circle at 100% 90%, rgba(241, 218, 171, 0.55), transparent 55%),
-    radial-gradient(circle at 20% 100%, rgba(255, 214, 130, 0.55), transparent 55%),
-    rgb(244, 238, 230);
+  background: #f0efef;
 }
- 
+
 /* --- Tarjetas de métricas --- */
 .metrics {
   display: flex;
-  gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
+  gap: 6px;
 }
- 
+
 .metric-card {
   flex: 1;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 14px;
   padding: 16px;
 }
- 
+
 .metric-label {
   font-size: 13px;
-  color: rgb(110, 95, 80);
+  color: #737373;
   margin-bottom: 6px;
 }
- 
+
 .metric-value {
   font-size: 28px;
   font-weight: 600;
-  color: rgb(35, 30, 25);
+  color: #141414;
 }
- 
+
 .metric-badge {
   display: inline-block;
   margin-top: 8px;
   font-size: 12px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 3px 10px;
-  color: rgb(60, 50, 40);
+  color: #262626;
 }
- 
+
 /* --- Bloque de topics con barras --- */
 .topics {
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 14px;
   padding: 18px;
 }
- 
+
 .topics-title {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(60, 50, 40);
+  color: #262626;
   margin-bottom: 12px;
 }
- 
+
 .topic-row {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 10px;
   font-size: 14px;
-  color: rgb(60, 50, 40);
+  color: #262626;
 }
- 
+
 .topic-name {
   width: 110px;
 }
- 
-/* La barra: un fondo claro y dentro un relleno morado
+
+/* La barra: un fondo claro y dentro un relleno naranja
    cuyo width en % ES el dato */
 .topic-bar {
   flex: 1;
   height: 8px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   overflow: hidden;
 }
- 
+
 .topic-fill {
   height: 100%;
-  width: 0%; /* empieza en 0 y JS la anima a su valor */
-  background: rgb(155, 120, 190);
+  width: 0%;
+  /* empieza en 0 y JS la anima a su valor */
+  background: #3da050;
   border-radius: 8px;
   transition: width 1s ease;
 }
- 
+
 .topic-pct {
   width: 40px;
   text-align: right;
 }
- 
+
 /* --- Botón de pausa --- */
 .pause-btn {
   margin-top: 30px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid rgb(60, 50, 40);
+  border: 1px solid #262626;
   background: transparent;
   cursor: pointer;
   font-size: 14px;
-  color: rgb(60, 50, 40);
+  color: #262626;
 }
- 
+
 /* ============================================
    6. RESPONSIVE: en móvil, una columna
    ============================================ */
@@ -482,22 +492,115 @@ h4 {
     flex-direction: column;
     padding: 20px;
   }
+
   .steps {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
 .segundobloque {
-  background-color: rgb(237, 209, 165);
-  padding: 15%;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  background-color: #F5F5F6;
+  padding-top: 80px;
+
 }
+
+.porque {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.subPorque {
+  font-size: 20px;
+  padding-top: 6px;
+  color: #595959;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 1%;
+  padding-top: 20px;
+  display: flex;
+  width: 1640px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 220px;
+  display: flex;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 30px 30px 30px rgba(0.06, 0.06, 0.06, 0.06);
+}
+
+.colorTC {
+  color: black;
+  font-size: 16px;
+}
+
+.colorTCC {
+  color: #111111;
+  font-weight: 300px;
+  font-size: 18px;
+}
+
+.tercerBloque {
+  background-color: #F5F5F6;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.price {
+  text-align: center;
+  gap: 4px;
+  font-size: 14px;
+  background-color: #F5F5F6;
+  padding: 40px 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #3da050;
+}
+
+.cardsPrice {
+  background-color: #F5F5F5;
+  text-align: center;
+  display: flex;
+  width: 640px;
+  height: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:12px;
+  font-size: 40px;
+}
+
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2rem;      /* título más pequeño en móvil */
+    font-size: 2rem;
+    /* título más pequeño en móvil */
   }
+
   nav {
-    flex-direction: column;  /* menú en vertical */
+    flex-direction: column;
+    /* menú en vertical */
   }
+
   /* etc. */
 }
